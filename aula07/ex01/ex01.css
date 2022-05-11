@@ -1,0 +1,93 @@
+body{
+    background-image: radial-gradient(circle, rgb(105, 105, 105) 5%, rgb(54, 54, 41) 80%);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin-top: 5%;
+    transform: translate(-20%, 0px);
+    justify-content: center;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 150px;
+}
+
+div .img{
+    height: 150px;
+    width: 150px;
+    box-shadow: inset 0px 0px 10px 10px black;
+    border-radius: 10px;
+    background-size: 150px;
+}
+
+div .img:hover{
+    height: 148px;
+    width: 148px;
+    border: 1px rgb(54, 54, 41) solid;
+    box-shadow: 0px 0px 10px 5px rgb(105, 105, 105, .9);
+}
+
+div .img:nth-child(1){
+    background-image: url("./imagens/teemo.jpg");
+}
+div .img:nth-child(1):active{
+    background-image: none;
+    background-color: white;
+}
+div .img:nth-child(2){
+    background-image: url("./imagens/yorick.webp");
+}
+div .img:nth-child(3){
+    background-image: url("./imagens/ezreal.webp");
+    background-size: 270px;
+    background-position-x: -75px;
+}
+div .img:nth-child(4){
+    background-image: url("./imagens/khazix.webp");
+    background-position-y: -35px;
+}
+div .img:nth-child(5){
+    background-image: url("./imagens/pantheon.jpg");    
+    background-size: 145px;
+    background-position-y: -16px;
+    background-position-x: -2px;
+}
+div .img:nth-child(6){
+    background-image: url("./imagens/kogmaw.jfif");
+    background-position-y: -63px;
+    background-position-x: -7px;
+}
+div .img:nth-child(7){
+    background-image: url("./imagens/rengar.jfif");
+    background-position-y: -28px;
+}
+div .img:nth-child(8){
+    background-image: url("./imagens/zac.webp");
+}
+div .img:nth-child(9){
+    background-image: url("./imagens/fizz.webp");
+}
+div .img:nth-child(10){
+    background-image: url("./imagens/gragas.webp");
+}
+div .img:nth-child(11){
+    background-image: url("./imagens/hecarim.webp");
+    background-size: 269px;
+    background-position-x: -31px;
+}
+div .img:nth-child(12){
+    background-image: url("./imagens/vladimir.webp");
+}
+
+.img p{
+    padding-top: 25%;
+    display: flex;
+    opacity: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
